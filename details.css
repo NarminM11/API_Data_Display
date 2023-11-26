@@ -1,21 +1,23 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
+    color: #333;
     margin: 0;
   }
   h2{
     text-align: center;
+    background-color: green;
     color: #ddd;
-    background-color: blue;
   }
-  
-  .loadProduct {
-    display: flex;
-    flex-wrap: wrap;
+  .product-detail {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
   }
   
   .blank {
-    margin: 0 10px 20px 0;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .cards {
@@ -30,25 +32,23 @@ body {
   
   .product img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    height: auto;
     border-bottom: 1px solid #ddd; 
-
   }
   
-  .product .title {
-    font-size: 16px;
+  .product h6 {
+    font-size: 18px;
     margin-bottom: 10px;
-    color:darkblue;
+    color: darkblue;
   }
   
   .product .info {
     margin-bottom: 10px;
-    color: black;
+    color:black
   }
   
   .product .price span {
-    color: green;
+    color: #e44d26;
     font-weight: bold;
   }
   
@@ -58,7 +58,7 @@ body {
     padding: 10px 15px;
     border-radius: 5px;
     text-align: center;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
   }
   
   .btn:hover {
