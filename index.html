@@ -5,21 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>API_Data_Display</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Crimson+Text:wght@600&family=EB+Garamond&family=Montserrat:wght@900&family=Pixelify+Sans:wght@600&family=Poppins:wght@300;500&family=Prata&family=Titan+One&family=Young+Serif&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
+  <div class="head"></div>
   <div id="container">
     <div class="text-center">
       <h2 class="display-7">PRODUCTS</h2>
     </div>
-    <div>
-      <label for="searchInput"></label>
+    <div class="search-div">
+      <label class="label"  for="searchInput"></label>
       <input type="text" id="searchInput" placeholder="Enter product name">
-      <button onclick="searchProducts()">Search</button>
+      <button class="sbutton" type="submit"><i class="fa fa-search"></i></button>    </div>
     </div>
+
     <div class="loadProduct"></div>
   </div>
-
+  <div class="pagination">
+    <button id="previBtn" onclick="prevPage()">Previous</button>
+    <button id="nextBtn" onclick="nextPage()">Next</button>
+</div>
   <script src="script.js"></script>
 </body>
 </html>
