@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Element Example</title>
+  </head>
+  <body>
+    <label for="mySelect">Select a value:</label>
+    <select id="mySelect">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+
+    <button onclick="getSelectedValue()">Get Selected Value</button>
+
+    <script>
+      function getSelectedValue() {
+        var selectElement = document.getElementById("mySelect");
+
+        var selectedValue = selectElement.value;
+
+        // console.log("Selected Value: " + selectedValue);
+      }
+    </script>
+  </body>
+</html>
