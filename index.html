@@ -18,6 +18,12 @@
     <div class="text-center">
       <h2 class="display-7">PRODUCTS</h2>
     </div>
+    <div class="category-div">
+      <label for="categorySelect"></label>
+      <select id="categorySelect" onchange="filterProductsByCategory()">
+        <option value="all">All</option>
+      </select>
+    </div>
     <div class="search-div">
       <label class="label"  for="searchInput"></label>
       <input type="text" id="searchInput" placeholder="Enter product name">

@@ -1,6 +1,7 @@
 var row = document.querySelector(".loadProduct");
 var currentPage = 1;
 var perPageProducts = 10;
+var categorySelect = document.getElementById("categorySelect");
 
 fetch("https://dummyjson.com/products")
   .then((response) => response.json())
@@ -51,22 +52,62 @@ function displayProducts(products) {
   });
 }
 
-function fetchProducts() {
-  fetch("https://dummyjson.com/products")
-    .then((response) => response.json())
-    .then((data) => {
-      displayProducts(data.products);
-    })
-    .catch((err) => console.error(err));
-}
-function nextPage() {
-  currentPage++;
-  fetchProducts();
-}
+// function fetchProducts() {
+//   fetch("https://dummyjson.com/products")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       displayProducts(data.products);
+//     })
+//     .catch((err) => console.error(err));
+// }
+// function nextPage() {
+//   currentPage++;
+//   fetchProducts();
+// }
 
-function previPage() {
-  if (currentPage > 1) {
-    currentPage--;
-    fetchProducts();
-  }
-}
+// function previPage() {
+//   if (currentPage > 1) {
+//     currentPage--;
+//     fetchProducts();
+//   }
+// }
+
+
+// // Fetch categories and populate the dropdown
+// fetch('https://dummyjson.com/products/categories')
+//   .then(response => response.json())
+//   .then(categories => {
+//     categories.forEach(category => {
+//       var option = document.createElement("option");
+//       option.value = category.toLowerCase();
+//       option.text = category;
+//       categorySelect.add(option);
+//     });
+//   })
+//   .catch(err => console.error(err));
+//   // fetchAndLoadProducts();
+
+//   function filterProductsByCategory() {
+//     var selectedCategory = categorySelect.value.toLowerCase();
+  
+//     fetch('https://dummyjson.com/products')
+//       .then(response => response.json())
+//       .then(data => {
+//         console.log('Fetched data:', data);
+  
+//         if (selectedCategory !== 'all') {
+//           // Filter products based on the selected category
+//           console.log('All products:', data.products);
+//           var filteredProducts = data.products.filter(product =>
+//             product.categories && product.categories.includes(selectedCategory)
+//           );
+//           console.log('Filtered products:', filteredProducts);
+//           loadProducts(filteredProducts);
+//         } else {
+//           // Load all products if 'All Categories' is selected
+//           loadProducts(data.products);
+//         }
+//       })
+//       .catch(err => console.error(err));
+//   }
+  

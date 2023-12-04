@@ -90,7 +90,7 @@ h2 {
   font-weight: bold;
   margin-top: 10px;
 }
-.search-div {
+ .search-div {
   position: relative;
   max-width: 400px;
   margin: 20px 10px;
@@ -99,7 +99,7 @@ h2 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   text-align: center;
-}
+} */
 
 .label {
   display: block;
@@ -133,4 +133,31 @@ h2 {
 
 .fa-search {
   margin-right: 5px;
+} 
+
+.category-div {
+  position: relative;
+  max-width: 200px;
+  margin: 20px 10px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
 }
+
+.category-div label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+#categorySelect {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
