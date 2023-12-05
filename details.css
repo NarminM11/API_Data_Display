@@ -60,12 +60,12 @@ h2{
 }
 
 .discount {
-  color: #e44d26; /* Set your preferred color for discount text */
+  color: #e44d26; 
   margin-bottom: 5px;
 }
 
 .category, .stock {
-  color: #666; /* Set your preferred color for category and stock text */
+  color: #666; 
   margin-bottom: 5px;
 }
 
@@ -75,7 +75,7 @@ h2{
 
 .price {
   font-size: 1.4em;
-  color: #007bff; /* Set your preferred color for price text */
+  color: #007bff; 
 }
 
 
