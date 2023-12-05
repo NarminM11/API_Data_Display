@@ -5,21 +5,18 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
 }
 h2 {
   text-align: center;
   padding: 20px 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .pagination {
@@ -28,13 +25,17 @@ h2 {
 }
 
 .pagination button {
-  background-color: #007bff;
+  background-color: grey;
   color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin: 0 5px;
+}
+.pagination button:hover {
+  background-color: #0056b3;
+  color:azure
 }
 
 .loadProduct {
@@ -91,7 +92,7 @@ h2 {
   font-weight: bold;
   margin-top: 10px;
 }
- .search-div {
+.search-div {
   position: relative;
   max-width: 400px;
   margin: 20px 10px;
@@ -99,10 +100,8 @@ h2 {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  text-align: center;
-} */
-
-.label {
+}
+*/ .label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
@@ -116,11 +115,14 @@ h2 {
   border: 1px solid #ccc;
   border-radius: 3px;
   box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .sbutton {
-  padding: 10px 15px;
-  background-color: #007bff;
+  padding: 14px 14px;
+  background-color: grey;
   color: #fff;
   border: none;
   border-radius: 3px;
@@ -134,31 +136,24 @@ h2 {
 
 .fa-search {
   margin-right: 5px;
-} 
+}
 
-.category-div {
-  position: relative;
-  max-width: 200px;
-  margin: 20px 10px;
-  padding: 15px;
+.row {
+  margin: 10px;
+}
+
+#select_option {
+  padding: 8px;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container select {
+  width: 430px;
+  margin-left: 10px;
   background-color: #fff;
+  border-color: #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  text-align: center;
 }
-
-.category-div label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #333;
-}
-
-#categorySelect {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
-}
-

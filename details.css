@@ -1,24 +1,35 @@
-
-body {
-  font-family: 'Arial', sans-serif;
+.head {
+  background-color: #333;
+  /* width: 10000px; */
+  height: 40px;
+}
+body{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
-}
-h2 {
-  text-align: center;
-  padding: 20px 0;
 }
 
-.product-detail {
+h2{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 40px;
+}
+
+.blank {
   margin: 20px;
 }
 
 .cards {
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.cards:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .product {
@@ -27,46 +38,63 @@ h2 {
 
 .gallery {
   display: flex;
-  overflow-x: auto;
-  padding: 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-.gallery-image {
-  width: 100px; 
-  height: 100px; 
+.gallery img {
+  max-width: 250px;
+  max-height: 150px;
   object-fit: cover;
-  margin-right: 10px;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
 }
 
 .title {
-  margin-top: 10px;
-  font-size: 1.5em;
-  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.discount {
+  color: #e44d26; /* Set your preferred color for discount text */
+  margin-bottom: 5px;
+}
+
+.category, .stock {
+  color: #666; /* Set your preferred color for category and stock text */
+  margin-bottom: 5px;
 }
 
 .info {
-  margin-top: 10px;
-  color: #555;
+  margin-bottom: 10px;
 }
 
 .price {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #007bff;
+  font-size: 1.4em;
+  color: #007bff; /* Set your preferred color for price text */
 }
 
-.btn {
+
+.go-back-button {
+  display: block;
+  width: 200px;
+  margin-top: 20px;
+  text-align: center;
   text-decoration: none;
-  color: #fff;
-  background-color: #007bff;
-  padding: 10px 15px;
+  padding: 10px;
+  background-color: grey;
+  color: white;
+  border: none;
   border-radius: 5px;
-  display: inline-block;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.btn:hover {
+.go-back-button:hover {
   background-color: #0056b3;
+  color:azure
 }

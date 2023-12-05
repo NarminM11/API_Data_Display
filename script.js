@@ -23,8 +23,11 @@ function loadProducts(data) {
                     <div class="product">
                         <img src="${data.images[0]}">
                         <h6 class="title">${data.title}</h6>
-                        <div class="info"><span class="text">${data.description}</span></div>
-                        <div class="price"><span>${data.price}</span></div>
+                        <div class="info"><span class="text">Description: ${data.description}</span></div>
+                        <div class="discount">Discount:${data.discountPercentage}%<p>
+                        <div class="category">Category: ${data.category}</div>
+                        <div class="stock">Stock: ${data.stock}</div>
+                        <div class="price"><span>Price: ${data.price}</span></div>
                     </div>
                 </div>
             </a>
